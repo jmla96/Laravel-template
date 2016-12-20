@@ -127,25 +127,14 @@
         <h2 class="tittle-section blue-dark "> Imagenes </h2>
     </center>
     <section>
+
         <div class="center-block container" >
+
+            @foreach($imagen as $image)
             <div class="galery-img">
-                <img src="http://c.directlyrics.com/img/upload/lana-del-rey-big-eyes.jpg" alt="..." class="img-g">
+                <img src="{{ asset('storage/'.$image->image)}}" alt="..." class="img-g">
             </div>
-            <div class="galery-img">
-                <img src="http://www.billboard.com/files/styles/article_main_image/public/media/lana-del-rey-press-2014-billboard-650.jpg " alt="..." class="img-g">
-            </div>
-            <div class="galery-img">
-                <img src=" http://digitalspyuk.cdnds.net/15/43/1600x800/landscape-lana-del-rey-august-2015.jpg" alt="..." class="img-g">
-            </div>
-            <div class="galery-img">
-                <img src=" https://upload.wikimedia.org/wikipedia/commons/7/71/Lana_Del_Rey_Cannes_2012.jpg" alt="..." class="img-g">
-            </div>
-            <div class="galery-img">
-                <img src="http://cdn01.cdn.justjared.com/wp-content/uploads/headlines/2016/09/lana-del-rey-sends-her-fans-love-after-rainy-show-in-ireland.jpg" alt="..." class="img-g">
-            </div>
-            <div class="galery-img">
-                <img src="http://images.sk-static.com/images/media/img/col3/20140902-021139-318171.jpg" alt="..." class="img-g">
-            </div>
+            @endforeach
         </div>
     </section>
 @endsection

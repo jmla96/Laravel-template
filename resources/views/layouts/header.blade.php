@@ -2,7 +2,7 @@
     <div style="float:right;margin:5px;width: 20%;min-width:300px;">
         <div class="dropdown" style="float:left;cursor:pointer;margin-right:15px;">
             <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown trigger
+                Idioma
                 <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
