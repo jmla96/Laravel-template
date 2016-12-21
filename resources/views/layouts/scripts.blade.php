@@ -1,16 +1,7 @@
 
-<!-- jQuery 2.1.4 -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
-<!-- AdminLTE App -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.3/js/app.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 <script>
     $(window).scroll(function () {
         $(this).scrollTop() > 7000 ?
@@ -29,26 +20,13 @@
             x.className = "topnav";
         }
     }
-    $(window).scroll(function () {
-        $(this).scrollTop() > 7000 ?
-            $('#logoo').removeClass('logo-a'):
-            $('#logoo').addClass('logo-b');
-        $(this).scrollTop() < 10 ?
-            $('#logoo').removeClass('logo-b'):
-            $('#logoo').addClass('logo-a');
+
+    $(document).ready(function(){
+        $('ul.first').bsPhotoGallery({
+            "classes" : "col-lg-2 col-md-4 col-sm-3 col-xs-4 col-xxs-12",
+            "hasModal" : true
+        });
     });
-    $(window).scroll(function () {
-        $(this).scrollTop() > 7000 ?
-            $('#arriba-volver').removeClass('arriba-volver'):
-            $('#arriba-volver').addClass('arriba-volver-b');
-        $(this).scrollTop() < 10 ?
-            $('#arriba-volver').removeClass('arriba-volver-b'):
-            $('#arriba-volver').addClass('arriba-volver');
-    });
-    window.onload = detectarCarga;
-    function detectarCarga(){
-        document.getElementById("carga").style.display="none";
-    }
 </script>
 <script>
     (function() {

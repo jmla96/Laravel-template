@@ -15,8 +15,8 @@
 <body class="skin-blue sidebar-mini">
 @include('layouts.header')
 @yield('content')
+@include('layouts.footer')
 @include('layouts.scripts')
 @yield('scripts')
-@include('layouts.footer')
 </body>
 </html>

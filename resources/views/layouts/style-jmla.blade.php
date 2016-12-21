@@ -1,10 +1,6 @@
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <style>
@@ -55,6 +51,11 @@
         text-decoration: none;
         border-bottom:5px solid white;
     }
+    .link-header {
+        margin-right:15px;
+        float: left;
+    }
+    .nameAplication {float: left;margin-top:15px;margin-left:13px;color:white;font-size: 23px;}
     footer {
         width:100%;
         min-height:350px;
@@ -62,12 +63,6 @@
         padding-top:10px;
         color: #ffffff;
         float: left;
-    }
-    .link-footer {
-        margin-left:20px;float:left;border-right:0.8px solid white;padding-right:20px;
-    }
-    .link-footer:hover {
-        text-decoration: underline;
     }
     /* Remove margins and padding from the list, and add a black background color */
     ul.topnav {
@@ -126,40 +121,24 @@
     }
     .font-size-18px { font-size: 18px; }
     .float-left { float:left; }
+    .float-right { float:right; }
     .color-white{color:white;}
     .color-silver {color:#bdc3c7;}
     .orange {background: #e67e22;}
     .blue-dark {background: #34495e;}
-    .margin-5{margin:5px;}
-    .padding-5{padding:5px;}
-    .padding-10{padding:10px;}
-    .padding-15{padding:15px;}
-    .border-black-1 { border:1px solid black}
-    .remove-padding-l{ padding-left: 0px !important; }
-    .remove-padding-r{ padding-right: 0px !important; }
+    .remove-padding-l{ padding-left: 0 !important; }
+    .remove-padding-r{ padding-right: 0 !important; }
+    .width-six{max-width: 600px;padding:0 20px 0 20px}
+    .m-5{ margin:5px;}
+    .mt-5px { margin-top:5px;}
 
     h2 b { font-size:35px; }
     .imgdivone{float:left;width: 50%; }
-
-    .imgdivtwo {padding:5px;-webkit-box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.75);
-        box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.75);margin:18px;border-radius:5px;}
+    .imgdivtwo {padding:5px;-webkit-box-shadow: 0 6px 15px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0 px 15px -5px rgba(0,0,0,0.75);
+        box-shadow: 0 6px 15px -5px rgba(0,0,0,0.75);margin:10px;border-radius:5px;}
     .tittle-section { width: 100%;padding:7px 0  7px 0 ; float:left;color:#bdc3c7;}
-    .galery-img{
-        float:left;
-        margin-left:5px;
-        margin-top:5px;
-        width: 19%;
-        min-width:200px;
-        height:200px;
-        background:none;
-        display: flex;
-        justify-content: center;
-        align-items: center;-webkit-box-shadow: 0px 6px 15px -5px rgba(149,165,166,1);
-        -moz-box-shadow: 0px 6px 15px -5px rgba(149,165,166,1);
-        box-shadow: 0px 6px 15px -5px rgba(149,165,166,1);
-        border-radius:5px;
-    }
-    .img-g{max-width: 100%;max-height:100%;}
-
+    .item {max-height: 445px;}
+    .hr-tittle {border:1px solid #34495e;width:200px;}
+    h3{ font-size: 1em }
 </style>

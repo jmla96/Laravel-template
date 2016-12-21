@@ -4,8 +4,8 @@
 @endsection
 @section('content')
     <!-- CAROSEL -->
-    <div class="row ">
-        <div id="carousel-example-generic" class="carousel slide col-md-8 remove-padding-r" data-ride="carousel">
+    <div class="row">
+        <div id="carousel-example-generic" class="carousel slide col-md-8 remove-padding-r" data-ride="carousel" >
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -14,17 +14,17 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox" >
-                <div class="item active" style="max-height: 445px;">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
                     <img src="http://lyfstylmusic.com/wp-content/uploads/2015/06/3405441.jpg" alt="..." >
-                    <div class="carousel-caption  ">
+                    <div class="carousel-caption">
                         <h3>Born to die</h3>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aperiam, blanditiis
                         delectus deserunt dignissimos doloremque expedita explicabo labore laboriosam modi placeat, quidem
                         quis quo ratione reiciendis similique, sunt voluptate!
                     </div>
                 </div>
-                <div class="item" style="max-height: 430px;">
+                <div class="item" >
                     <img src="https://flavorwire.files.wordpress.com/2014/06/lana-del-rey2.jpg" alt="..." >
                     <div class="carousel-caption  ">
                         <h3>Die for me</h3>
@@ -33,7 +33,7 @@
                         quis quo ratione reiciendis similique, sunt voluptate!
                     </div>
                 </div>
-                <div class="item" style="max-height: 430px;">
+                <div class="item" >
                     <img src="https://i.ytimg.com/vi/cE6wxDqdOV0/maxresdefault.jpg" alt="..." >
                     <div class="carousel-caption  ">
                         <h3>Video games</h3>
@@ -65,36 +65,41 @@
         </div>
     </div>
 
-
     <section>
-        <div style="max-width:650px;min-width:300px;" class="center-block text-center">
+        <a name="music"></a>
+        <center>
             <h2>Music</h2>
-            <hr style="border:1px solid #34495e;width:200px;" class="center-block">
-            <p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut consequuntur
+            <hr class="hr-tittle">
+        </center>
+        <div class="center-block container">
+            <img src="http://67.media.tumblr.com/46871242336b55e999ae9204f589d169/tumblr_nolu1vV0aW1rdpjfqo1_540.png" class=" col-sm-3 img-responsive">
+            <br><br>
+            <p align="left" class=" col-sm-8 wow fadeInRight" data-wow-duration="1s">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut consequuntur
                 dignissimos ducimus error hic modi necessitatibus quas quisquam, veniam, veritatis voluptatem!
-                Doloremque laborum pariatur quae, quas veritatis vero.</p>
-        </div>
-        <div style="max-width:90%; height: 400px;margin-top:30px;" class="center-block">
-            <img src="https://secure.polyvoreimg.com/cgi/img-thing/size/l/tid/66356680.jpg" class="col-md-4 float-left">
-            <p align="left" class="col-md-7 float-left" style="margin-top:100px;">Lorem ipsum dolor sit amet,
+                Doloremque laborum pariatur quae, quas veritatis vero.
+                <br><br>
+                Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Accusamus ad aliquid nemo omnis tempore? A accusantium, aspernatur
                 delectus dignissimos expedita illo, laudantium nisi nobis officia perspiciatis repudiandae sit soluta
                 totam.</p>
         </div>
+
     </section>
     <center>
-        <h2 class="tittle-section orange color-white"><b class="color-white ">Todos sus</b> albumes</h2>
+        <a name="albumes"></a>
+        <h2 class="tittle-section orange"><b class="color-white">Todos sus</b> albumes</h2>
     </center>
     <section>
-        <div style="max-width:650px;min-width:300px;" class="center-block text-center">
+        <div class="center-block text-center width-six">
             <h2>Singles</h2>
-            <hr style="border:1px solid #34495e;width:200px;" class="center-block">
+            <hr class="center-block hr-tittle">
             <p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut consequuntur
                 dignissimos ducimus error hic modi necessitatibus quas quisquam, veniam, veritatis voluptatem!
                 Doloremque laborum pariatur quae, quas veritatis vero.</p>
         </div>
         <br><br>
-        <div class="center-block" style="max-width: 1200px;min-height:400px; ">
+        <div class="center-block container wow fadeInUp" data-wow-duration="1s">
             <center>
                 <div class="col-sm-2 imgdivtwo">
                     <img src="https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
@@ -124,17 +129,20 @@
         </div>
     </section>
     <center>
-        <h2 class="tittle-section blue-dark "> Imagenes </h2>
+        <a name="imagenes"></a>
+       <h2 class="tittle-section blue-dark"> Imagenes </h2>
     </center>
     <section>
 
-        <div class="center-block container" >
-
+        <div class="container">
+            <div class="row">
             @foreach($imagen as $image)
-            <div class="galery-img">
-                <img src="{{ asset('storage/'.$image->image)}}" alt="..." class="img-g">
-            </div>
+                <div class="col-md-3 col-sm-4 col-xs-6 mt-5px">
+                    <img src="{{ asset('storage/'.$image->image)}}" class="img-responsive">
+                </div>
             @endforeach
+            </div>
         </div>
     </section>
+
 @endsection
